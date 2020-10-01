@@ -165,7 +165,7 @@ public class TaskList {
 
         Ui.matchedTask();
         int printCounter = 1;
-
+        //checks the list for matches
         for (int i = 0; i<counter-1; i++){
             String toCheck = new String(dataStorage.get(i).toString());
             if(toCheck.contains(input.substring(4).trim())){
