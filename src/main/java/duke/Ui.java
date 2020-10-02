@@ -1,5 +1,8 @@
 package duke;
 
+/**
+ * Displays messages to the user
+ */
 public class Ui {
     public static void welcomeMessage(){
         String logo = " ____        _        \n"
