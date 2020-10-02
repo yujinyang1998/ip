@@ -1,7 +1,7 @@
 package duke;
 
 /**
- * takes care of most of the messages to be displayed to the user
+ * Displays messages to the user
  */
 public class Ui {
     public static void welcomeMessage(){
