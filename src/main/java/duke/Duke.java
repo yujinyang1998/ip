@@ -7,9 +7,12 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.Vector;
 
+/**
+ * Duke
+ */
 public class Duke {
     public static boolean breakCheck = false;
-    
+
     public static void main(String[] args) throws IOException {
 
         Ui.welcomeMessage();

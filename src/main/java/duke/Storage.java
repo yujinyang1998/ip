@@ -11,6 +11,9 @@ import java.io.IOException;
 import java.util.Scanner;
 import java.util.Vector;
 
+/**
+ * Deals with the read and write of the save file
+ */
 public class Storage {
 
     private static File file = null;

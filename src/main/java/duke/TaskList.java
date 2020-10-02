@@ -8,6 +8,9 @@ import duke.task.ToDo;
 
 import java.util.Vector;
 
+/**
+ * Contains methods that change the vector list that stores all the tasks
+ */
 public class TaskList {
     /**
      * Takes the user input, check if it is a number and deletes the task according to the number.
@@ -121,6 +124,7 @@ public class TaskList {
             throw new DukeException("Invalid input.");
         }
 
+        //marking as done
         if(completedIndex <= counter && !dataStorage.get(completedIndex - 1).isDone){
             if(dataStorage.get(completedIndex-1) instanceof Event){
                 Event replacement = new Event(dataStorage.get(completedIndex-1).description,  ((Event) dataStorage.get(completedIndex-1)).at);
@@ -160,9 +164,9 @@ public class TaskList {
             throw new DukeException("Please add something to the list.");
         }
 
-        System.out.println("Here are the matching tasks in your list:");
+        Ui.matchedTask();
         int printCounter = 1;
-
+        //checks the list for matches
         for (int i = 0; i<counter-1; i++){
             String toCheck = new String(dataStorage.get(i).toString());
             if(toCheck.contains(input.substring(4).trim())){

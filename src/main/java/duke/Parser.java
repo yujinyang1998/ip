@@ -5,7 +5,9 @@ import duke.task.Task;
 
 import java.util.Vector;
 
-
+/**
+ * Parse the user's input
+ */
 public class Parser {
     /**
      * Checks the user input to determine the command
